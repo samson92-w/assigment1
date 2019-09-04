@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title> ADDRESS  </title>
+<head>
+    <script>
+    function firstaddress(){
+        let name=document.getElementById("entername").value;
+        let street=document.getElementById("enterstreet").value;
+        let city=document.getElementById("entercity").value;
+        let state=document.getElementById("enterstate").value;
+        let zipcode=document.getElementById("enterzipcode").value;
+        let alladdress=name+"<br>"+" "+ street + "<br>" + " "+ state +city+zipcode;
+        document.getElementById("output").innerHTML= alladdress;
+
+    }
+
+    
+    </script>
+
+</head>
+<body>
+    
+ NAME:  <input style="text" id="entername"><br>
+
+ STREET:<input style="text" id="enterstreet"><br>
+
+ CITY:  <input style="text" id="entercity">
+
+  State:<input style="text" id="enterstate"> zipcode:<input style="text"id="enterzipcode">
+<button type="button" onclick="firstaddress()">  make Address  </button>
+    <div id="output">   </div>
+</body>
+</html>

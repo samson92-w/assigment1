@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="=utf-8">
+      <title> Applied scripture  </title>
+      <script> 
+      function applyscripture(){
+          let name =document.getElementById("nameInputbox").value;
+          let scripture = "I," + name +" ,it is better to trust in the lord than "+
+          "to put confidence in man ." +  "psalm 118:8.";
+       document.getElementById("outputDiv").innerHTML=scripture;
+}
+      </script>
+    </head>
+
+       <body>
+ Please enter your name :<input type="text" id="nameInputbox">
+           <button type="button" onclick="applyscripture()">verse</button>
+           <div id="outputDiv"></div>
+       
+     
+    </body>
+</html>
